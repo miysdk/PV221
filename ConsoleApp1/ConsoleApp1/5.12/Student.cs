@@ -40,5 +40,10 @@ namespace ConsoleApp1._5._12
         {
             Console.WriteLine($"Student {LastName} solved the {task}");
         }
+
+        public override int GetHashCode()
+        {
+            return ToString().GetHashCode();
+        }
     }
 }

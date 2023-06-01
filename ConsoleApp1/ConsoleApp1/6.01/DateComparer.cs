@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp1._5._12;
 
-namespace Old
+namespace ConsoleApp1._6._01
 {
     internal class DateComparer : IComparer
     {
@@ -15,7 +16,7 @@ namespace Old
             {
                 return DateTime.Compare((x as Student).BirthDate, (y as Student).BirthDate);
             }
-            throw new ArgumentException();
+            throw new NotImplementedException();
         }
     }
 }
